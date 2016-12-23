@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
         NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
         if((networkInfo != null) && networkInfo.isConnectedOrConnecting()){
             Toast.makeText(this, "YOU HAVE NETWORK!", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "YOU DON'T HAVE NETWORK!!!", Toast.LENGTH_SHORT).show();
         }
     }
 

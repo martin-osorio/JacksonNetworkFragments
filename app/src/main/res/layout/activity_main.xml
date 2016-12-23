@@ -29,4 +29,14 @@
         android:id="@+id/Button_Fragments"
         android:text="Nested Fragments"
         android:onClick="onFragmentsClick"/>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Frame_Main">
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Fragment_Main"
+            android:name="com.example.martinosoriolopez.jacksonnetworkfragments.MainFragment"/>
+    </FrameLayout>
 </LinearLayout>
