@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -27,8 +29,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onJacksonClick(View view) {
-    }
-
-    public void onFragmentsClick(View view) {
+        ObjectMapper objectMapper = new ObjectMapper();
     }
 }

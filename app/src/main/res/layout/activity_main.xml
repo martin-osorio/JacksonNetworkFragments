@@ -23,15 +23,11 @@
         android:id="@+id/Button_Jackson"
         android:text="Parse Jackson"
         android:onClick="onJacksonClick"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/Button_Fragments"
-        android:text="Nested Fragments"
-        android:onClick="onFragmentsClick"/>
+
     <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
         android:id="@+id/Frame_Main">
         <fragment
             android:layout_width="match_parent"

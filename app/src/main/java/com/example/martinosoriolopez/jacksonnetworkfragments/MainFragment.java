@@ -24,8 +24,9 @@ public class MainFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        Fragment subFragment = new SubFragment();
+        Fragment subFragment1 = new SubFragment();
+        Fragment subFragment2 = new SubFragment();
         FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
-        transaction.add(R.id.Frame, subFragment).commit();
+        transaction.add(R.id.Frame1, subFragment1).add(R.id.Frame2, subFragment2).commit();
     }
 }
